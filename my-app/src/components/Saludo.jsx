@@ -1,11 +1,11 @@
 import React from 'react'
 
-const saludo = () => {
+const Saludo = (props) => {
   return(
     <>
-      <h2>Holaaa</h2>
+      <h2>Hola {props.persona}!</h2>
     </>
   )
 }
 
-export default saludo
+export default Saludo
