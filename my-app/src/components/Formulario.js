@@ -19,10 +19,15 @@ const Formulario = () => {
     })
   }
 
+  const enviarDatos = (e) => {
+    e.preventDefault()
+    console.log(`Nombre: ${datos.nombre}, Apellido: ${datos.apellido}`) 
+  }
+
   return (
     <>
   <h1>Formulario</h1>
-    <form className="row">
+    <form onSubmit={enviarDatos} className="row">
       <div className="col-md-3">
 
       <input
